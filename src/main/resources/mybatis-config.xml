@@ -30,22 +30,22 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	<!-- <properties resource="mysql.properties">
+	<!-- <properties>
 		<property name="jdbc.driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="jdbc.url" value="jdbc:mysql://localhost:3306/student_manager" />
+		<property name="jdbc.url" value="jdbc:mysql://localhost:3306/test" />
 		<property name="username" value="root" />
-		<property name="password" value="limingnihao" />
+		<property name="password" value="123456" />
 	</properties> -->
 	
-	<settings>
-		<setting name="cacheEnabled" value="true" /><!--  -->
+	<!-- <settings>
+		<setting name="cacheEnabled" value="true" />
 		<setting name="lazyLoadingEnabled" value="true" />
 		<setting name="multipleResultSetsEnabled" value="true" />
 		<setting name="useColumnLabel" value="true" />
 		<setting name="useGeneratedKeys" value="false" />
 		<setting name="enhancementEnabled" value="false" />
 		<setting name="defaultExecutorType" value="SIMPLE" />
-	</settings> 
+	</settings>  -->
 	
 	<!-- 类型别名 -->
 	<typeAliases>
@@ -53,6 +53,6 @@
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="sample/mybatis/mapper/OrdersMapper.xml" />
+		<mapper resource="mapper/OrdersMapper.xml" />
 	</mappers>
 </configuration>

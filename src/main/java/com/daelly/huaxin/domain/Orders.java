@@ -1,114 +1,105 @@
 package com.daelly.huaxin.domain;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class Orders implements Serializable {
+public class Orders {
+    private Integer id;
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 3559364667187368884L;
+    private String product;
 
-	
-	private Long id;
-	
-	private String product;
-	
-	private String size;
-	
-	private Integer num;
-	
-	private String username;
-	
-	private String phone;
-	
-	private String remarks;
-	
-	private String address;
-	
-	private Date createTime;
-	
-	private String state;
+    private String size;
 
-	public Long getId() {
-		return id;
-	}
+    private Integer num;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    private String username;
 
-	public String getProduct() {
-		return product;
-	}
+    private String phone;
 
-	public void setProduct(String product) {
-		this.product = product;
-	}
+    private String remarks;
 
-	public String getSize() {
-		return size;
-	}
+    private String address;
 
-	public void setSize(String size) {
-		this.size = size;
-	}
+    private Date createtime;
 
-	public Integer getNum() {
-		return num;
-	}
+    private String state;
 
-	public void setNum(Integer num) {
-		this.num = num;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public String getProduct() {
+        return product;
+    }
 
-	public String getPhone() {
-		return phone;
-	}
+    public void setProduct(String product) {
+        this.product = product == null ? null : product.trim();
+    }
 
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
+    public String getSize() {
+        return size;
+    }
 
-	public String getRemarks() {
-		return remarks;
-	}
+    public void setSize(String size) {
+        this.size = size == null ? null : size.trim();
+    }
 
-	public void setRemarks(String remarks) {
-		this.remarks = remarks;
-	}
+    public Integer getNum() {
+        return num;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public void setNum(Integer num) {
+        this.num = num;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public Date getCreateTime() {
-		return createTime;
-	}
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
+    }
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
+    public String getPhone() {
+        return phone;
+    }
 
-	public String getState() {
-		return state;
-	}
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
-	
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks == null ? null : remarks.trim();
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address == null ? null : address.trim();
+    }
+
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state == null ? null : state.trim();
+    }
 }
