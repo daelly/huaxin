@@ -23,12 +23,12 @@ public class OrdersController {
 		return service.findAll();
 	}
 	
-	@RequestMapping(value="/insert", method=RequestMethod.GET)
+	@RequestMapping(value="/insert", method=RequestMethod.POST)
 	public Integer insert(@ModelAttribute Orders order) {
 		return service.insertOrder(order);
 	}
 	
-	@RequestMapping(value="/update", method=RequestMethod.GET)
+	@RequestMapping(value="/update", method=RequestMethod.POST)
 	public Integer update(Integer id, String state) {
 		return service.updateOrderState(id, state);
 	}
@@ -37,8 +37,9 @@ public class OrdersController {
 		return service.findAll();
 	}
 	
-	@RequestMapping(value="/delete", method=RequestMethod.GET)
+	@RequestMapping(value="/delete", method=RequestMethod.POST)
 	public Integer delete(Integer id) {
 		return service.deleteOrder(id);
 	}
+	
 }
